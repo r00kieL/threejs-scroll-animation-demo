@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    /*font-size: 60px;*/
+    color: white;
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    margin-top: 100px;
+}
+
+/*通用样式*/
+header {
+    background-color: black;
+    display: flex;
+
+    grid-column: 2 / span 5;
+}
+blockquote {
+    background-color: white;
+    display: flex;
+
+    grid-column: 2 / span 9;
+}
+section {
+    background-color: black;
+
+    grid-column: 2 / span 6;
+}
+
+header {
+    height: 350px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 350px;
+}
+header h1 {
+    font-size: 80px;
+}
+header p {
+    font-size: 30px;
+}
+
+.introduction{
+    grid-column: 2 / span 6;
+
+    color: black;
+    height: 80px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    align-items: center;
+    margin-bottom: 300px;
+    padding-left: 20px;
+}
+
+.manifesto{
+    margin-bottom: 300px;
+
+    height: 600px;
+    padding: 20px;
+
+    font-size: 25px;
+}
+
+.learning{
+    background-color: black;
+
+    grid-column: 6 / span 6;
+
+    margin-top: 10px;
+
+    height: 700px;
+}
+
+.manifesto-quote {
+    grid-column: 6 / span 6;  /* 控制在网格的右半部分 */
+
+    background: white;
+    padding: 1rem 2rem;       /* 给文字留点空间 */
+    max-width: 700px;         /* 控制宽度，避免太长 */
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.learning-journey{
+    grid-column: 6 / span 6;
+}
+
+blockquote {
+    margin: 0;
+    color: black;
+    height: 80px;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    align-items: center;
+
+    margin-bottom: 300px;
+
+    padding-left: 20px;
+}
+
+
+
+section {
+    margin-bottom: 300px;
+
+    height: 750px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.thanks {
+    grid-column: 2 / span 3;
+}
